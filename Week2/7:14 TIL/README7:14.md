@@ -4,7 +4,7 @@
 
 클래스와 구조체는 프로퍼티의 값이 초기화되어 있지 않으면 인스턴스를 만들 수가 없다.(메모리에 올릴 수 없다는 의미) 때문에 반드시 둘 중 하나의 방법으로 초기화를 해주어야 한다.
 
-``` 
+``` swift
 // 1번 방법
 var name: String = "윤정민"
 var age: Int = 20
@@ -23,7 +23,7 @@ var glassesOn: Bool?
 
 이 방법 외에 클래스에선 초기화 구문을 제공하는데 이를 사용하면 굳이 위의 두 가지 방법을 이용하지 않아도 인스턴스를 만들 수 있다.
 
-```
+```swift
 init(name: String, age: Int, glassesOn: Bool) {
 		self.name = name
 		self.age = age
@@ -41,7 +41,7 @@ let f1 = Friends(name: "윤정민", age: 20, glassesOn: true)
 
 구조체는 클래스에는 없는 멤버와이즈 구문이라는게 존재한다. 따로 init구문을 추가해주지 않고 인스턴스를 만들 때 값을 추가해주면된다.
 
-``` 
+``` swift
 var mother = Family(name: "양화심", age = 51, isHuman: true)
 let bangWool = Family(name: "방울", age = 5, isHumans: false)
 ```
