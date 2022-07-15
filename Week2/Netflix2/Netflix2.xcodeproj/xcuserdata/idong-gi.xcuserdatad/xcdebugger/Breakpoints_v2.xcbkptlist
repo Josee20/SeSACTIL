@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "581B4E7D-9886-432E-9AD4-C8E98BA2ECBB"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "478C02CB-3E45-4696-90F0-69997C84B1B0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Netflix2/JackFlixViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "JackFlixViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "478C02CB-3E45-4696-90F0-69997C84B1B0 - 464ac87f4fcd86a6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Netflix2.JackFlixViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Netflix2.JackFlixViewController"
+                  moduleName = "Netflix2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/idong-gi/Desktop/Xcode%20workspace/sesac%20project/Netflix2/Netflix2/JackFlixViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "31">
+               </Location>
+               <Location
+                  uuid = "478C02CB-3E45-4696-90F0-69997C84B1B0 - 5c84bb1ef96a2351"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Netflix2.JackFlixViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Netflix2.JackFlixViewController"
+                  moduleName = "Netflix2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/idong-gi/Desktop/Xcode%20workspace/sesac%20project/Netflix2/Netflix2/JackFlixViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "117">
+               </Location>
+               <Location
+                  uuid = "478C02CB-3E45-4696-90F0-69997C84B1B0 - 85e0855680c1a039"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Netflix2.JackFlixViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Netflix2.JackFlixViewController&gt;"
+                  moduleName = "Netflix2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/idong-gi/Desktop/Xcode%20workspace/sesac%20project/Netflix2/Netflix2/JackFlixViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  uuid = "478C02CB-3E45-4696-90F0-69997C84B1B0 - 140cc0c719ebf156"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Netflix2.JackFlixViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Netflix2.JackFlixViewController&gt;"
+                  moduleName = "Netflix2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/idong-gi/Desktop/Xcode%20workspace/sesac%20project/Netflix2/Netflix2/JackFlixViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "74">
+               </Location>
+               <Location
+                  uuid = "478C02CB-3E45-4696-90F0-69997C84B1B0 - 5762fb65f9dd8484"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Netflix2.JackFlixViewController.__deallocating_deinit"
+                  moduleName = "Netflix2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/idong-gi/Desktop/Xcode%20workspace/sesac%20project/Netflix2/Netflix2/JackFlixViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

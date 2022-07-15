@@ -28,10 +28,8 @@ class ViewController: UIViewController {
             movieBtn[i].layer.borderWidth = 5
             movieBtn[i].clipsToBounds = true
         }
-        
-        
-        
     }
+    
     @IBAction func frozenKingdomClicked(_ sender: UIButton) {
         backImage.image = UIImage(named: MovieName.겨울왕국2.rawValue)
     }
