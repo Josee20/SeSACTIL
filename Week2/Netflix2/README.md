@@ -37,10 +37,26 @@ modal의 present - dismiss 방식은 기본적으로 화면이 아래에서 위�
 <br>
 주의할 사항은 신델리게이트가 나타난 iOS13.0 부터 Modal 방식도 많이 달라졌는데 iOS13 이전의 Modal의 디폴트 값은 Fullscreen이었고 iOS13 이상부턴 pagesheet가 디폴트니 주의하자.
 
-
+<br>
 
 ### 오토레이아웃
+기존 프로젝트가 오류가나서 다시 새로만들면서 연습하게 되었다. 어느정도 감은 잡았으나 빠르게 만들기 위해선 더욱 연습이 필요할 거 같다.
 
+<br>
 
 ### UIAlertController
+4단계의 형식으로 이루어져있다.
+<br>
+1. 배경 및 타이틀, 메시지 정하기
+2. 버틈 만들기
+3. 액션 추가하기
+4. 띄우기
+<br>
+
+이 순서만 익히고 세부사항들을 공부했는데 UIAlertAction의 .cancel은 무조건 아래에 붙는 버튼이고 .destructive는 빨간색으로 띄워주는 버튼이다. 또한 액션시트는 밑에서 나오는 것, alert는 가운데에 띄워주는 것이다. 밑에서나오는 actionsheet는 title과 message에 nil 값을 주는 것이 보다 깔끔하다.
+
+
+https://user-images.githubusercontent.com/92367484/179346856-b6d92d9b-5822-4443-a545-cfffcceba91b.mp4
+
+
 
