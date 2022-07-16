@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5rT-vs-aau">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="urn-Qf-Oa7">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -184,7 +184,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igb-a6-llw">
-                                <rect key="frame" x="20" y="43" width="44.5" height="72"/>
+                                <rect key="frame" x="20" y="87" width="44.5" height="72"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="60"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -193,6 +193,9 @@
                                 <rect key="frame" x="162.5" y="615.5" width="89" height="44.5"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button" image="play_normal"/>
+                                <connections>
+                                    <segue destination="YkD-Do-2uH" kind="unwind" unwindAction="unwindTTransitionFirstVCWithSegue:" id="Yjf-DR-W8E"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNy-Ur-gMX">
                                 <rect key="frame" x="322" y="613.5" width="32.5" height="32.5"/>
@@ -220,7 +223,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="elO-Dm-j60">
-                                <rect key="frame" x="129" y="64" width="265" height="30"/>
+                                <rect key="frame" x="129" y="108" width="265" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJ7-yd-pfs">
                                         <rect key="frame" x="0.0" y="0.0" width="76" height="30"/>
@@ -290,6 +293,22 @@
                             <constraint firstItem="6it-xW-xED" firstAttribute="height" secondItem="CKg-wL-xeH" secondAttribute="height" multiplier="0.4" id="yYk-9k-CHZ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="EWv-fc-nX8">
+                        <rightBarButtonItems>
+                            <barButtonItem title="Item" image="list.bullet" catalog="system" id="qL6-yS-SDz">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="listBtnClicked:" destination="UjJ-ve-EZr" id="Vhx-zZ-saM"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Item" image="checkmark" catalog="system" id="N2v-gF-22T">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="checkBtnClicked:" destination="UjJ-ve-EZr" id="f8g-oV-IqO"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
                     <connections>
                         <outlet property="backImage" destination="cgu-8t-fUL" id="VJf-9f-8HP"/>
                         <outletCollection property="movieBtn" destination="aif-0F-jlj" collectionClass="NSMutableArray" id="Bt7-lB-NRE"/>
@@ -298,8 +317,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LYq-WH-BfS" sceneMemberID="firstResponder"/>
+                <exit id="YkD-Do-2uH" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-1759" y="-463"/>
+            <point key="canvasLocation" x="-36" y="177"/>
         </scene>
         <!--Jack Flix View Controller-->
         <scene sceneID="Y7X-TW-AOd">
@@ -310,7 +330,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JACKFLIX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXW-ZZ-PWO">
-                                <rect key="frame" x="134.5" y="74" width="145.5" height="35"/>
+                                <rect key="frame" x="134.5" y="118" width="145.5" height="35"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="29"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -390,23 +410,46 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SZB-cC-lAA">
                                 <rect key="frame" x="335" y="614" width="51" height="31"/>
                             </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o7s-DT-Ne5">
+                                <rect key="frame" x="30" y="670.5" width="58" height="31"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="show"/>
+                                <connections>
+                                    <segue destination="UjJ-ve-EZr" kind="show" id="70a-W8-bcb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S6E-Cx-hf7">
+                                <rect key="frame" x="30" y="716.5" width="64" height="31"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="modal"/>
+                                <connections>
+                                    <segue destination="UjJ-ve-EZr" kind="presentation" modalPresentationStyle="pageSheet" id="vui-G2-igu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tLi-u1-d67"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="o7s-DT-Ne5" firstAttribute="top" secondItem="1d1-wc-A4f" secondAttribute="bottom" constant="25" id="3M9-HT-k3O"/>
                             <constraint firstItem="8NJ-hk-fDI" firstAttribute="centerY" secondItem="0SZ-bq-W7q" secondAttribute="centerY" multiplier="0.8" id="3qK-Sl-Ny8"/>
                             <constraint firstItem="iKa-cx-i8N" firstAttribute="leading" secondItem="8NJ-hk-fDI" secondAttribute="leading" id="6mI-zv-riG"/>
                             <constraint firstItem="tLi-u1-d67" firstAttribute="trailing" secondItem="8NJ-hk-fDI" secondAttribute="trailing" constant="30" id="6od-5e-NMp"/>
+                            <constraint firstItem="S6E-Cx-hf7" firstAttribute="leading" secondItem="1d1-wc-A4f" secondAttribute="leading" id="8kU-Ul-dFY"/>
                             <constraint firstItem="iKa-cx-i8N" firstAttribute="trailing" secondItem="8NJ-hk-fDI" secondAttribute="trailing" id="J3q-Ao-bss"/>
                             <constraint firstItem="iKa-cx-i8N" firstAttribute="top" secondItem="8NJ-hk-fDI" secondAttribute="bottom" constant="25" id="K9o-T1-1jy"/>
                             <constraint firstItem="1d1-wc-A4f" firstAttribute="top" secondItem="iKa-cx-i8N" secondAttribute="bottom" constant="20" id="My1-VG-qQJ"/>
                             <constraint firstItem="iKa-cx-i8N" firstAttribute="width" secondItem="8NJ-hk-fDI" secondAttribute="width" id="Tb2-AA-c6f"/>
                             <constraint firstItem="iKa-cx-i8N" firstAttribute="height" secondItem="ZrL-Aw-9WK" secondAttribute="height" multiplier="1.4" id="VYO-nz-Wa2"/>
+                            <constraint firstItem="S6E-Cx-hf7" firstAttribute="top" secondItem="o7s-DT-Ne5" secondAttribute="bottom" constant="15" id="WWA-rb-dM1"/>
                             <constraint firstItem="8NJ-hk-fDI" firstAttribute="centerX" secondItem="0SZ-bq-W7q" secondAttribute="centerX" id="YsR-MX-Muw"/>
                             <constraint firstItem="SZB-cC-lAA" firstAttribute="top" secondItem="iKa-cx-i8N" secondAttribute="bottom" constant="18.5" id="awy-wv-F3r"/>
+                            <constraint firstItem="o7s-DT-Ne5" firstAttribute="leading" secondItem="1d1-wc-A4f" secondAttribute="leading" id="cVG-ol-fpU"/>
                             <constraint firstItem="HXW-ZZ-PWO" firstAttribute="top" secondItem="tLi-u1-d67" secondAttribute="top" constant="30" id="dmf-sL-9CA"/>
                             <constraint firstItem="SZB-cC-lAA" firstAttribute="trailing" secondItem="iKa-cx-i8N" secondAttribute="trailing" id="fuQ-cf-gOt"/>
+                            <constraint firstItem="S6E-Cx-hf7" firstAttribute="top" secondItem="o7s-DT-Ne5" secondAttribute="bottom" constant="15" id="gWe-A0-HTd"/>
                             <constraint firstItem="HXW-ZZ-PWO" firstAttribute="centerX" secondItem="0SZ-bq-W7q" secondAttribute="centerX" id="ui3-pu-VRk"/>
                             <constraint firstItem="8NJ-hk-fDI" firstAttribute="leading" secondItem="tLi-u1-d67" secondAttribute="leading" constant="30" id="v9h-fV-QDV"/>
                             <constraint firstItem="1d1-wc-A4f" firstAttribute="leading" secondItem="iKa-cx-i8N" secondAttribute="leading" id="wqN-hZ-UpP"/>
@@ -415,6 +458,7 @@
                             <outletCollection property="gestureRecognizers" destination="c7F-Ll-Wvc" appends="YES" id="arn-TO-hHI"/>
                         </connections>
                     </view>
+                    <navigationItem key="navigationItem" id="pXb-6v-SQm"/>
                     <connections>
                         <outlet property="signUpBtn" destination="iKa-cx-i8N" id="Vvq-Ks-e40"/>
                         <outlet property="switchBtn" destination="SZB-cC-lAA" id="MBo-7T-P1N"/>
@@ -432,7 +476,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-1664" y="175"/>
+            <point key="canvasLocation" x="-949.27536231884062" y="205.58035714285714"/>
         </scene>
         <!--Jack Flix View Controller-->
         <scene sceneID="VCO-fS-4u6">
@@ -536,11 +580,34 @@
             </objects>
             <point key="canvasLocation" x="-2539" y="361"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9nT-OB-bPL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="urn-Qf-Oa7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gKN-MH-AaQ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5rT-vs-aau" kind="relationship" relationship="rootViewController" id="TY7-Az-bls"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aPQ-Dd-Vnk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1712" y="206"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="70a-W8-bcb"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="background" width="375" height="667"/>
         <image name="check" width="18" height="13"/>
+        <image name="checkmark" catalog="system" width="128" height="114"/>
         <image name="info" width="22" height="22"/>
+        <image name="list.bullet" catalog="system" width="128" height="88"/>
         <image name="play_normal" width="97" height="26"/>
         <image name="겨울왕국2" width="240" height="361"/>
         <image name="괴물" width="240" height="361"/>
