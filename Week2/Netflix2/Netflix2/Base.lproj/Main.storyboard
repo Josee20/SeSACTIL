@@ -141,17 +141,17 @@
             <objects>
                 <viewController id="UjJ-ve-EZr" customClass="ViewController" customModule="Netflix2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oa4-RR-WRv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="신과함께인과연" translatesAutoresizingMaskIntoConstraints="NO" id="cgu-8t-fUL">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="HIf-oi-FpO">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aif-0F-jlj">
-                                <rect key="frame" x="20" y="754.5" width="111.5" height="111.5"/>
+                                <rect key="frame" x="20" y="700.5" width="111.5" height="111.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="aif-0F-jlj" secondAttribute="height" id="orD-Yq-bCh"/>
                                 </constraints>
@@ -162,7 +162,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CKg-wL-xeH">
-                                <rect key="frame" x="151.5" y="754.5" width="111" height="111.5"/>
+                                <rect key="frame" x="151.5" y="700.5" width="111" height="111.5"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button" image="괴물"/>
                                 <connections>
@@ -170,7 +170,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V03-mo-L6g">
-                                <rect key="frame" x="282.5" y="754.5" width="111.5" height="111.5"/>
+                                <rect key="frame" x="282.5" y="700.5" width="111.5" height="111.5"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button" image="명량"/>
                                 <connections>
@@ -178,19 +178,19 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="미리보기" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kDu-cT-hQ1">
-                                <rect key="frame" x="20" y="721.5" width="66" height="23"/>
+                                <rect key="frame" x="20" y="667.5" width="66" height="23"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igb-a6-llw">
-                                <rect key="frame" x="20" y="87" width="44.5" height="72"/>
+                                <rect key="frame" x="20" y="43" width="44.5" height="72"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="60"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6it-xW-xED">
-                                <rect key="frame" x="162.5" y="615.5" width="89" height="44.5"/>
+                                <rect key="frame" x="162.5" y="561.5" width="89" height="44.5"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button" image="play_normal"/>
                                 <connections>
@@ -198,7 +198,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNy-Ur-gMX">
-                                <rect key="frame" x="322" y="613.5" width="32.5" height="32.5"/>
+                                <rect key="frame" x="322" y="559.5" width="32.5" height="32.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="bNy-Ur-gMX" secondAttribute="height" id="nYC-fT-95w"/>
                                 </constraints>
@@ -206,24 +206,24 @@
                                 <state key="normal" title="" image="info"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSd-tK-cBD">
-                                <rect key="frame" x="40" y="626.5" width="71.5" height="22"/>
+                                <rect key="frame" x="40" y="572.5" width="71.5" height="22"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="check"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내가 찜한 컨텐츠" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gy7-Z7-Uls">
-                                <rect key="frame" x="19.5" y="651" width="112" height="20.5"/>
+                                <rect key="frame" x="19.5" y="597" width="112" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="정보" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5I0-J5-Tqq">
-                                <rect key="frame" x="323.5" y="648.5" width="29.5" height="20.5"/>
+                                <rect key="frame" x="323.5" y="594.5" width="29.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="elO-Dm-j60">
-                                <rect key="frame" x="129" y="108" width="265" height="30"/>
+                                <rect key="frame" x="129" y="64" width="265" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJ7-yd-pfs">
                                         <rect key="frame" x="0.0" y="0.0" width="76" height="30"/>
@@ -319,7 +319,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LYq-WH-BfS" sceneMemberID="firstResponder"/>
                 <exit id="YkD-Do-2uH" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-36" y="177"/>
+            <point key="canvasLocation" x="-84" y="226"/>
         </scene>
         <!--Jack Flix View Controller-->
         <scene sceneID="Y7X-TW-AOd">
@@ -476,7 +476,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-949.27536231884062" y="205.58035714285714"/>
+            <point key="canvasLocation" x="-778" y="213"/>
         </scene>
         <!--Jack Flix View Controller-->
         <scene sceneID="VCO-fS-4u6">
@@ -600,7 +600,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="70a-W8-bcb"/>
+        <segue reference="vui-G2-igu"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="background" width="375" height="667"/>
