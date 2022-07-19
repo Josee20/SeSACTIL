@@ -38,6 +38,9 @@
                                     <rect key="frame" x="333.5" y="78.5" width="48.5" height="30"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="추가"/>
+                                    <connections>
+                                        <action selector="addButtonReturn:" destination="FPX-FZ-sEF" eventType="touchUpInside" id="bTI-US-Rm2"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -121,7 +124,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vx0-UM-vdh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-329" y="-209"/>
+            <point key="canvasLocation" x="-345" y="-165"/>
         </scene>
     </scenes>
     <resources>
