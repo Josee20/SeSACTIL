@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		490D91592886400C006A686E /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 490D91582886400C006A686E /* Search.storyboard */; };
+		490D915B28864045006A686E /* Trend.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 490D915A28864045006A686E /* Trend.storyboard */; };
+		490D915E2886408B006A686E /* intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 490D915D2886408B006A686E /* intro.storyboard */; };
+		490D916028864408006A686E /* TrendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490D915F28864408006A686E /* TrendViewController.swift */; };
+		490D916228864414006A686E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490D916128864414006A686E /* SearchViewController.swift */; };
+		490D916428864533006A686E /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490D916328864533006A686E /* UIViewController + Extension.swift */; };
+		490D91662886478E006A686E /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490D91652886478E006A686E /* UITextField+Extension.swift */; };
+		490D916828864BA1006A686E /* BucketlistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490D916728864BA1006A686E /* BucketlistTableViewController.swift */; };
+		490D916A28864DA0006A686E /* BucketlistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490D916928864DA0006A686E /* BucketlistTableViewCell.swift */; };
+		490D916C28869296006A686E /* Shopping.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 490D916B28869296006A686E /* Shopping.storyboard */; };
+		490D916F2886938F006A686E /* ShoppingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490D916E2886938F006A686E /* ShoppingTableViewController.swift */; };
+		490D9171288693AD006A686E /* ShoppingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490D9170288693AD006A686E /* ShoppingTableViewCell.swift */; };
 		49902E132884DDCE00B5F481 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49902E122884DDCE00B5F481 /* AppDelegate.swift */; };
 		49902E152884DDCE00B5F481 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49902E142884DDCE00B5F481 /* SceneDelegate.swift */; };
 		49902E172884DDCE00B5F481 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49902E162884DDCE00B5F481 /* ViewController.swift */; };
@@ -20,6 +32,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		490D91582886400C006A686E /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		490D915A28864045006A686E /* Trend.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Trend.storyboard; sourceTree = "<group>"; };
+		490D915D2886408B006A686E /* intro.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = intro.storyboard; sourceTree = "<group>"; };
+		490D915F28864408006A686E /* TrendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendViewController.swift; sourceTree = "<group>"; };
+		490D916128864414006A686E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		490D916328864533006A686E /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
+		490D91652886478E006A686E /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		490D916728864BA1006A686E /* BucketlistTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketlistTableViewController.swift; sourceTree = "<group>"; };
+		490D916928864DA0006A686E /* BucketlistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketlistTableViewCell.swift; sourceTree = "<group>"; };
+		490D916B28869296006A686E /* Shopping.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Shopping.storyboard; sourceTree = "<group>"; };
+		490D916E2886938F006A686E /* ShoppingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTableViewController.swift; sourceTree = "<group>"; };
+		490D9170288693AD006A686E /* ShoppingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTableViewCell.swift; sourceTree = "<group>"; };
 		49902E0F2884DDCE00B5F481 /* TrendMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrendMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49902E122884DDCE00B5F481 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49902E142884DDCE00B5F481 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +69,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		490D915C2886405D006A686E /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				49902E2A28850FD800B5F481 /* Setting.storyboard */,
+				490D91582886400C006A686E /* Search.storyboard */,
+				490D915A28864045006A686E /* Trend.storyboard */,
+				490D916928864DA0006A686E /* BucketlistTableViewCell.swift */,
+				490D916728864BA1006A686E /* BucketlistTableViewController.swift */,
+				490D915F28864408006A686E /* TrendViewController.swift */,
+				490D916128864414006A686E /* SearchViewController.swift */,
+				490D91652886478E006A686E /* UITextField+Extension.swift */,
+				490D916328864533006A686E /* UIViewController + Extension.swift */,
+				490D915D2886408B006A686E /* intro.storyboard */,
+				49902E282884FE3C00B5F481 /* HomeTableViewController.swift */,
+				49EFE7DD2885657200F99CC9 /* SettingTableViewController.swift */,
+				490D916D288692BD006A686E /* 7-19_Assignment */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		490D916D288692BD006A686E /* 7-19_Assignment */ = {
+			isa = PBXGroup;
+			children = (
+				490D916B28869296006A686E /* Shopping.storyboard */,
+				490D9170288693AD006A686E /* ShoppingTableViewCell.swift */,
+				490D916E2886938F006A686E /* ShoppingTableViewController.swift */,
+			);
+			path = "7-19_Assignment";
+			sourceTree = "<group>";
+		};
 		49902E062884DDCE00B5F481 = {
 			isa = PBXGroup;
 			children = (
@@ -68,10 +122,8 @@
 				49902E142884DDCE00B5F481 /* SceneDelegate.swift */,
 				49902E162884DDCE00B5F481 /* ViewController.swift */,
 				49902E262884F10F00B5F481 /* Home.storyboard */,
-				49902E282884FE3C00B5F481 /* HomeTableViewController.swift */,
 				49902E182884DDCE00B5F481 /* Main.storyboard */,
-				49902E2A28850FD800B5F481 /* Setting.storyboard */,
-				49EFE7DD2885657200F99CC9 /* SettingTableViewController.swift */,
+				490D915C2886405D006A686E /* New Group */,
 				49902E1B2884DDD200B5F481 /* Assets.xcassets */,
 				49902E1D2884DDD200B5F481 /* LaunchScreen.storyboard */,
 				49902E202884DDD200B5F481 /* Info.plist */,
@@ -137,10 +189,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				490D915B28864045006A686E /* Trend.storyboard in Resources */,
 				49902E1F2884DDD200B5F481 /* LaunchScreen.storyboard in Resources */,
 				49902E1C2884DDD200B5F481 /* Assets.xcassets in Resources */,
+				490D915E2886408B006A686E /* intro.storyboard in Resources */,
 				49902E2B28850FD800B5F481 /* Setting.storyboard in Resources */,
 				49902E1A2884DDCE00B5F481 /* Main.storyboard in Resources */,
+				490D916C28869296006A686E /* Shopping.storyboard in Resources */,
+				490D91592886400C006A686E /* Search.storyboard in Resources */,
 				49902E272884F10F00B5F481 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,10 +208,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				490D91662886478E006A686E /* UITextField+Extension.swift in Sources */,
+				490D9171288693AD006A686E /* ShoppingTableViewCell.swift in Sources */,
+				490D916F2886938F006A686E /* ShoppingTableViewController.swift in Sources */,
 				49902E292884FE3C00B5F481 /* HomeTableViewController.swift in Sources */,
+				490D916228864414006A686E /* SearchViewController.swift in Sources */,
+				490D916428864533006A686E /* UIViewController + Extension.swift in Sources */,
 				49902E172884DDCE00B5F481 /* ViewController.swift in Sources */,
 				49902E132884DDCE00B5F481 /* AppDelegate.swift in Sources */,
 				49902E152884DDCE00B5F481 /* SceneDelegate.swift in Sources */,
+				490D916828864BA1006A686E /* BucketlistTableViewController.swift in Sources */,
+				490D916028864408006A686E /* TrendViewController.swift in Sources */,
+				490D916A28864DA0006A686E /* BucketlistTableViewCell.swift in Sources */,
 				49EFE7DE2885657200F99CC9 /* SettingTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,7 +372,7 @@
 				INFOPLIST_FILE = TrendMedia/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Setting;
+				INFOPLIST_KEY_UIMainStoryboardFile = Shopping;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -336,7 +400,7 @@
 				INFOPLIST_FILE = TrendMedia/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Setting;
+				INFOPLIST_KEY_UIMainStoryboardFile = Shopping;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
