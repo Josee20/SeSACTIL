@@ -14,5 +14,12 @@ class SearchTableViewCell: UITableViewCell {
     @IBOutlet weak var movieReleaseDate: UILabel!
     @IBOutlet weak var movieSummary: UILabel!
     
-
+    func configurationCell(data: HarryPotter) {
+        moviePosterImage.image = data.poster
+        movieTitle.text = data.title
+        movieReleaseDate.text = data.releaseDate
+        movieSummary.text = data.overview
+        
+    }
+    
 }
