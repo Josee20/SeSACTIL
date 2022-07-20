@@ -96,7 +96,6 @@
 		490D915C2886405D006A686E /* New Group */ = {
 			isa = PBXGroup;
 			children = (
-				49902E2A28850FD800B5F481 /* Setting.storyboard */,
 				49E3ACF9288787750057296C /* SearchMovieTableViewCell.swift */,
 				49E3ACF72887871C0057296C /* SearchMovieTableViewController.swift */,
 				49E3ACFD288795350057296C /* MovieInfo.swift */,
@@ -110,8 +109,9 @@
 				490D91652886478E006A686E /* UITextField+Extension.swift */,
 				490D916328864533006A686E /* UIViewController + Extension.swift */,
 				490D915D2886408B006A686E /* intro.storyboard */,
-				49902E282884FE3C00B5F481 /* HomeTableViewController.swift */,
 				490D916128864414006A686E /* SearchViewController.swift */,
+				49902E282884FE3C00B5F481 /* HomeTableViewController.swift */,
+				49902E2A28850FD800B5F481 /* Setting.storyboard */,
 				49EFE7DD2885657200F99CC9 /* SettingTableViewController.swift */,
 				490D916D288692BD006A686E /* 7-19_Assignment */,
 			);
