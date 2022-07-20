@@ -12,4 +12,4 @@
 # 3주차
 ### [시스템 테이블뷰 셀 프로젝트](https://github.com/Josee20/SeSACTIL/blob/master/Week3/TrendMedia/TrendMedia/New%20Group)
 ### [커스텀 테이블뷰 셀 프로젝트](https://github.com/Josee20/SeSACTIL/tree/master/Week3/TrendMedia/TrendMedia/New%20Group/7-19_Assignment)
-### [도서관리 프로젝트]
+### [도서관리 프로젝트](https://github.com/Josee20/SeSACTIL/tree/master/Week3/LibraryProject)
