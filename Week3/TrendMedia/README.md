@@ -24,3 +24,5 @@
 
 - indexPath로 section과 cell을 인덱싱해서 사용하는 것에 대한 이해
 - 열거형의 CaseIterable에 대한 이해
+
+<br>
