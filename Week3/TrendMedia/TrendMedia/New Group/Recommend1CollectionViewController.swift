@@ -15,6 +15,8 @@ import Kingfisher
  heightForRowAt > ??? FlowLayout (heightForItem이 없는 이유)
  */
 
+
+
 var imageURL = "https://image.kmib.co.kr/online_image/2021/1121/2021111914060015124_1637298360_0016487163.jpg"
 class Recommend1CollectionViewController: UICollectionViewController {
 
@@ -41,7 +43,12 @@ class Recommend1CollectionViewController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecommendCollectionViewCell", for: indexPath) as! RecommendCollectionViewCell
+        
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecommendCollectionViewCell", for: indexPath) as? RecommendCollectionViewCell else {
+            return UICollectionViewCell() // 비어있는 클래스 인스턴스 반환된다는 뜻
+        }
+        
+//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecommendCollectionViewCell", for: indexPath) as! RecommendCollectionViewCell
         
         cell.posterImage.backgroundColor = .orange
         
@@ -54,6 +61,8 @@ class Recommend1CollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         view.makeToast("\(indexPath.item)번째 셀을 선택했습니다.", duration: 3, position: .center)
+        
+        self.navigationController?.popViewController(animated: true)
         
     }
     

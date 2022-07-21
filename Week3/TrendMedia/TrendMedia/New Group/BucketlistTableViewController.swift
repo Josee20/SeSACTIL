@@ -6,24 +6,54 @@
 //
 
 import UIKit
+import Foundation
 
 class BucketlistTableViewController: UITableViewController {
 
+    static let identifier = "BucketlistTableViewController"
+    
     @IBOutlet weak var userTextField: UITextField!
     
     var list = ["범죄도시2", "탑건", "토르"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // 네비게이션 컨트롤러 아이템 띄워주기
+        navigationItem.title = "버킷리스트"
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "xmark"), style: .plain, target: self, action: #selector(closeButtonClicked))
+        
        
         tableView.rowHeight = 80
         
         list.append("마녀")
         list.append("신과함께")
     }
+    
+    @objc func closeButtonClicked() {
+        self.dismiss(animated: true)
+        
+    }
+    
     @IBAction func userTextFieldReturn(_ sender: UITextField) {
         
-        list.append(sender.text!)
+        
+        if let value = sender.text?.trimmingCharacters(in: .whitespacesAndNewlines), !value.isEmpty, (2...6).contains(value.count) {
+            list.append(value)
+            tableView.reloadData()
+        } else {
+            // 토스테 메시지 띄우기
+        }
+        
+//        guard let value2 = sender.text?.trimmingCharacters(in: .whitespacesAndNewlines), !value.isEmpty, (2...6).contains(value.count) else {
+//            // 토스트 메시지 띄우기
+//            return
+//        }
+//
+//        list.append(value2)
+//        tableView.reloadData()
+        
+        
         
         //중요!!!
         
@@ -31,7 +61,6 @@ class BucketlistTableViewController: UITableViewController {
         //tableView.numberOfRows(inSection: <#T##Int#>)
         //tableView.cellForRow(at: <#T##IndexPath#>)
         
-        tableView.reloadData()
         // IndexSet찾아뽀기
         //tableView.reloadSections(IndexSet, with: <#T##UITableView.RowAnimation#>)
         
@@ -44,7 +73,8 @@ class BucketlistTableViewController: UITableViewController {
         
         // indexPath를 임의로 조정해줘야 할 경우가 있기 때문에 for: indexPath를 사용해주는 것이 좋음.
         // 애플이 주는 indexPath를 그대로 사용하겠다면 굳이 for: 매개변수는 안줘도 됨.
-        let cell = tableView.dequeueReusableCell(withIdentifier: "BucketlistTableViewCell", for: indexPath) as! BucketlistTableViewCell // as? 타입캐스팅 >> 스위프트 파일이랑 화면의 셀이랑 연결을 해준다는 의미
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: BucketlistTableViewCell.identifier, for: indexPath) as! BucketlistTableViewCell // as? 타입캐스팅 >> 스위프트 파일이랑 화면의 셀이랑 연결을 해준다는 의미
         
         cell.bucketlistLabel.text = list[indexPath.row]
         cell.bucketlistLabel.font = .boldSystemFont(ofSize: 18)

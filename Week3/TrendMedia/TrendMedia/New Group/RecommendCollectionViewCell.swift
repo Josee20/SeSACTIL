@@ -10,4 +10,5 @@ import UIKit
 class RecommendCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var posterImage: UIImageView!
+    
 }

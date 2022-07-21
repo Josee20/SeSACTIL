@@ -39,5 +39,15 @@ class SearchMovieTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         // 디바이스 전체의 높이에서 1/8을 가지겠다!는 의미
         return UIScreen.main.bounds.height / 8
+        
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        print("didSelectRowAt")
+        let sb = UIStoryboard(name: "Trend", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: "RecommendCollectionViewController") as! Recommend1CollectionViewController
+        
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
