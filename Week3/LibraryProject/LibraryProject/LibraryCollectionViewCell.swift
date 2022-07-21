@@ -9,6 +9,8 @@ import UIKit
 
 class LibraryCollectionViewCell: UICollectionViewCell {
     
+    
+    
     @IBOutlet weak var posterImageView: UIImageView!
     
     @IBOutlet weak var movieTitleLabel: UILabel!

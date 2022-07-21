@@ -18,6 +18,12 @@
 		492DD8092888039600C0A19A /* MovieInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492DD8082888039600C0A19A /* MovieInfo.swift */; };
 		492DD80B2888041E00C0A19A /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492DD80A2888041E00C0A19A /* Movie.swift */; };
 		492DD80E2888150500C0A19A /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 492DD80D2888150500C0A19A /* Toast */; };
+		49AA02FF2889200100195F5E /* moreInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49AA02FE2889200100195F5E /* moreInfo.storyboard */; };
+		49AA03012889206700195F5E /* searchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49AA03002889206700195F5E /* searchScreen.storyboard */; };
+		49AA03032889262D00195F5E /* moreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AA03022889262D00195F5E /* moreInfoViewController.swift */; };
+		49AA0305288926E700195F5E /* SearchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AA0304288926E700195F5E /* SearchScreenViewController.swift */; };
+		49AA030728893A2700195F5E /* WebScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49AA030628893A2700195F5E /* WebScreen.storyboard */; };
+		49AA030928893A4700195F5E /* WebScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AA030828893A4700195F5E /* WebScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +39,12 @@
 		492DD8062887FEF700C0A19A /* LibraryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryCollectionViewController.swift; sourceTree = "<group>"; };
 		492DD8082888039600C0A19A /* MovieInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieInfo.swift; sourceTree = "<group>"; };
 		492DD80A2888041E00C0A19A /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		49AA02FE2889200100195F5E /* moreInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = moreInfo.storyboard; sourceTree = "<group>"; };
+		49AA03002889206700195F5E /* searchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = searchScreen.storyboard; sourceTree = "<group>"; };
+		49AA03022889262D00195F5E /* moreInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moreInfoViewController.swift; sourceTree = "<group>"; };
+		49AA0304288926E700195F5E /* SearchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreenViewController.swift; sourceTree = "<group>"; };
+		49AA030628893A2700195F5E /* WebScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebScreen.storyboard; sourceTree = "<group>"; };
+		49AA030828893A4700195F5E /* WebScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +82,12 @@
 				492DD7F22887FE1D00C0A19A /* SceneDelegate.swift */,
 				492DD7F42887FE1D00C0A19A /* ViewController.swift */,
 				492DD7F62887FE1D00C0A19A /* Main.storyboard */,
+				49AA03002889206700195F5E /* searchScreen.storyboard */,
+				49AA0304288926E700195F5E /* SearchScreenViewController.swift */,
+				49AA02FE2889200100195F5E /* moreInfo.storyboard */,
+				49AA03022889262D00195F5E /* moreInfoViewController.swift */,
+				49AA030628893A2700195F5E /* WebScreen.storyboard */,
+				49AA030828893A4700195F5E /* WebScreenViewController.swift */,
 				492DD8042887FEE400C0A19A /* LibraryCollectionViewCell.swift */,
 				492DD8062887FEF700C0A19A /* LibraryCollectionViewController.swift */,
 				492DD8082888039600C0A19A /* MovieInfo.swift */,
@@ -146,6 +164,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				492DD7FD2887FE1E00C0A19A /* LaunchScreen.storyboard in Resources */,
+				49AA030728893A2700195F5E /* WebScreen.storyboard in Resources */,
+				49AA02FF2889200100195F5E /* moreInfo.storyboard in Resources */,
+				49AA03012889206700195F5E /* searchScreen.storyboard in Resources */,
 				492DD7FA2887FE1E00C0A19A /* Assets.xcassets in Resources */,
 				492DD7F82887FE1D00C0A19A /* Main.storyboard in Resources */,
 			);
@@ -159,10 +180,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				492DD80B2888041E00C0A19A /* Movie.swift in Sources */,
+				49AA030928893A4700195F5E /* WebScreenViewController.swift in Sources */,
+				49AA0305288926E700195F5E /* SearchScreenViewController.swift in Sources */,
 				492DD7F52887FE1D00C0A19A /* ViewController.swift in Sources */,
 				492DD7F12887FE1D00C0A19A /* AppDelegate.swift in Sources */,
 				492DD8072887FEF700C0A19A /* LibraryCollectionViewController.swift in Sources */,
 				492DD8052887FEE400C0A19A /* LibraryCollectionViewCell.swift in Sources */,
+				49AA03032889262D00195F5E /* moreInfoViewController.swift in Sources */,
 				492DD8092888039600C0A19A /* MovieInfo.swift in Sources */,
 				492DD7F32887FE1D00C0A19A /* SceneDelegate.swift in Sources */,
 			);

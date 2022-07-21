@@ -13,9 +13,18 @@ var colorSet: [UIColor] = [.cyan, .systemTeal, .blue, .darkGray, .purple, .brown
 
 class LibraryCollectionViewController: UICollectionViewController {
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setLayout()
+        
+        navigationItem.title = "검색"
+    }
+    
+    func setLayout() {
+        
         let layout = UICollectionViewFlowLayout()
         let space: CGFloat = 8
         let width = UIScreen.main.bounds.width - (space * 3)
@@ -26,10 +35,21 @@ class LibraryCollectionViewController: UICollectionViewController {
         layout.minimumLineSpacing = space
         layout.minimumInteritemSpacing = space
         
-    
         collectionView.collectionViewLayout = layout
     }
    
+    @IBAction func searchButtonClicked(_ sender: Any) {
+        
+        let sb = UIStoryboard(name: "searchScreen", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: SearchScreenViewController.identifier) as! SearchScreenViewController
+        let nav = UINavigationController(rootViewController: vc)
+        
+        nav.modalPresentationStyle = .fullScreen
+
+        self.present(nav, animated: true)
+        
+    }
+    
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "LibraryCollectionViewCell", for: indexPath) as! LibraryCollectionViewCell
@@ -47,7 +67,16 @@ class LibraryCollectionViewController: UICollectionViewController {
         return movieList.movie.count
     }
     
+//    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        view.makeToast("\(indexPath.item + 1)번째 포스터입니다", duration: 3.0, position: .center)
+//    }
+    
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        view.makeToast("\(indexPath.item + 1)번째 포스터입니다", duration: 3.0, position: .center)
+        
+        let sb = UIStoryboard(name: "moreInfo", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: moreInfoViewController.identifier) as! moreInfoViewController
+        
+        self.navigationController?.pushViewController(vc, animated: true)
     }
+    
 }
