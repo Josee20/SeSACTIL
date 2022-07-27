@@ -23,7 +23,5 @@ class moreInfoViewController: UIViewController {
         let vc = sb.instantiateViewController(withIdentifier: WebScreenViewController.identifier) as! WebScreenViewController
         
         self.navigationController?.pushViewController(vc, animated: true)
-        
-        
     }
 }
