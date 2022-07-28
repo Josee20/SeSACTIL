@@ -21,6 +21,8 @@
 
 환율계산기를 만들어보면서 willSet,didSet과 연산 프로퍼티 { get set } 구문이 함께 쓰일 수 없다는 점. newValue와 oldValue에 대해 더욱 공부할 수 있어서 좋았다.
 
+<br>
+
 
 
 ### 부족한점
