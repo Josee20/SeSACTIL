@@ -4,6 +4,10 @@
 
 <br>
 
+<img width="250" height="500" alt="simulator_screenshot_F0779546-8193-4477-B60D-46A4C8FC6B84" src="https://user-images.githubusercontent.com/92367484/181584116-915d9dca-a1ed-4f58-bb90-5e490cca7568.png">
+
+<br>
+
 웹화면을 앱 화면에서 띄울 수 있는 방법에 대해 공부했다. 웹킷(WebKit)과 웹킷뷰(WKWebView)를 활용하면 어렵지 않게 화면을 나타낼 수 있다. 추가적으로 extension 구문을 활용해 서치바의 기능을 델리게이트 패턴을 통해 만들어보았다.
 
 <br>
