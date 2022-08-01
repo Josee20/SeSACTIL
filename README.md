@@ -26,6 +26,12 @@
 
 # 5주차
 
+### [로또번호 찾기, 랜덤 맥주 추천](https://github.com/Josee20/SeSACTIL/tree/master/Week5/SeSAC2.LectureNetworkBasic)
+
+
+
+
+
 
 
 
