@@ -15,9 +15,15 @@
 
 import UIKit
 
+import Alamofire
+import SwiftyJSON
+
 class TranslateViewController: UIViewController {
 
     @IBOutlet weak var userInputTextView: UITextView!
+    
+    @IBOutlet weak var translateButton: UIButton!
+    @IBOutlet weak var translatedTextView: UITextView!
     
     let textViewPlaceholderText = "번역하고 싶은 문장을 작성해 보세요."
     
@@ -32,10 +38,45 @@ class TranslateViewController: UIViewController {
         userInputTextView.textColor = .lightGray
         
         userInputTextView.font = UIFont(name: "PyeongChangPeace-Light", size: 17)
-        
-
     }
+    
+    func requestTranslatedData(text: String) {
+        
+        let url = EndPoint.translateURL
+        
+        let parameter = ["source": "ko", "target": "en", "text": "\(text)"]
+        
+        let header: HTTPHeaders = ["X-Naver-Client-Id": APIKey.NAVER_ID, "X-Naver-Client-Secret": APIKey.NAVER_SECRET]
+        
+        AF.request(url, method: .post, parameters: parameter, headers: header).validate(statusCode: 200...500).responseJSON { response in
+            switch response.result {
+            case .success(let value):
+                let json = JSON(value)
+                print("JSON: \(json)")
+                
+                let statusCode = response.response?.statusCode ?? 500
+                
+                // 일반적으로 200번대가 성공됐을 때임
+                if statusCode == 200 {
+                    self.translatedTextView.text = json["message"]["result"]["translatedText"].stringValue
+                } else {
+                    self.translatedTextView.text = json["errorMessage"].stringValue
+                }
+
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+    
+    @IBAction func translateBtnClicked(_ sender: Any) {
+        requestTranslatedData(text: userInputTextView.text!)
+    }
+    
 }
+    
+    
+
 
 extension TranslateViewController: UITextViewDelegate {
     

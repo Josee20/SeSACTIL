@@ -62,26 +62,4 @@ class RandomBeerViewController: UIViewController {
     }
 }
 
-//func requestLotto(number: Int) {
-//
-//    let url = "https://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo=\(number)"
-//    // 접두어를 Alamofire 대신 AF로 바꿔주자.
-//    AF.request(url, method: .get).validate().responseJSON { response in
-//        switch response.result {
-//        case .success(let value):
-//            let json = JSON(value)
-//            print("JSON: \(json)")
-//
-//            let bonus = json["bnusNo"].intValue
-//            print(bonus)
-//
-//            let date = json["drwNoDate"].stringValue
-//            print(date)
-//
-//            self.numberTextField.text = date
-//
-//        case .failure(let error):
-//            print(error)
-//        }
-//    }
-//}
+

@@ -20,9 +20,8 @@ class LottoViewController: UIViewController {
     // 코드로 뷰를 만드는 기능이 훨씬 더 많이 남아있음
     @IBOutlet var lottoNum: [UILabel]!
     
-    
-    
     let numberList: [Int] = Array(1...1025).reversed()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,14 +35,14 @@ class LottoViewController: UIViewController {
         lottoPickerView.delegate = self
         lottoPickerView.dataSource = self
         
-        requestLotto(number: numberList[0])
+        //requestLotto(number: json["drwNo"].integerValue)
 
    
     }
     
     func requestLotto(number: Int) {
         
-        let url = "https://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo=\(number)"
+        let url = "\(EndPoint.lottoURL)&drwNo=\(number)"
         // 접두어를 Alamofire 대신 AF로 바꿔주자.
         AF.request(url, method: .get).validate().responseJSON { response in
             switch response.result {
@@ -57,11 +56,11 @@ class LottoViewController: UIViewController {
                     } else {
                         self.lottoNum[i-1].text = json["bnusNo"].stringValue
                     }
-                    
                 }
                 
                 let date = json["drwNoDate"].stringValue
                 print(date)
+                print(Date())
                 
                 self.numberTextField.text = date
                 

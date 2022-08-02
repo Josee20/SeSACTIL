@@ -7,12 +7,26 @@
 
 import Foundation
 
+struct APIKey {
+    static let BOXOFFICE = "f5eef3421c602c6cb7ea224104795888"
+    
+    static let NAVER_ID = "U7KAnOtk7HeMwNI6bm6U"
+    static let NAVER_SECRET = "QlCmslkoI8"
+}
+
+struct EndPoint {
+    static let boxOfficeURL = "http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?"
+    static let lottoURL =  "https://www.dhlottery.co.kr/common.do?method=getLottoNumber"
+    static let translateURL = "https://openapi.naver.com/v1/papago/n2mt"
+}
+
+
 //enum StoryboardName: String {
 //    case Main
 //    case Search
 //    case Setting
 //}
-
+//
 //struct StoryboardName {
 //
 //    // 접근제어를 통해 인스턴스화를 못하도록 할 수도 있음.
@@ -25,7 +39,7 @@ import Foundation
 //    static let search = "Search"
 //    static let setting = "Setting"
 //}
-
+//
 // StoryboardName.search
 
 
