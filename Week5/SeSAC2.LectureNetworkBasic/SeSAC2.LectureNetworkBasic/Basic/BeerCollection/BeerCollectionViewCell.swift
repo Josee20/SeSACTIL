@@ -11,8 +11,9 @@ class BeerCollectionViewCell: UICollectionViewCell {
     
     static let identifier = "BeerCollectionViewCell"
     
-    @IBOutlet weak var collecdtionBeerNameLabel: UILabel!
+    @IBOutlet weak var collectionBeerTitle: UILabel!
     @IBOutlet weak var collectionBeerImageView: UIImageView!
     @IBOutlet weak var collectionBeerDescriptionLabel: UILabel!
+    
     
 }

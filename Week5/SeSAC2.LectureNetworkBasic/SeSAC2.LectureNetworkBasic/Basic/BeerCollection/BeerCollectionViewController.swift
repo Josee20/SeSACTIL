@@ -20,8 +20,9 @@ class BeerCollectionViewController: UICollectionViewController {
         super.viewDidLoad()
         
         setLayout()
-
         requestBeerInfo()
+        
+        
     }
     
     func requestBeerInfo() {
@@ -47,6 +48,7 @@ class BeerCollectionViewController: UICollectionViewController {
                 }
                 
                 print(self.beerList)
+                self.collectionView.reloadData()
                 
             case .failure(let error):
                 print(error)
@@ -59,7 +61,7 @@ class BeerCollectionViewController: UICollectionViewController {
         let space: CGFloat = 8
         let width = UIScreen.main.bounds.width - (space * 3)
         
-        layout.itemSize = CGSize.init(width: width / 2, height: width * 2/3)
+        layout.itemSize = CGSize.init(width: width / 2, height: width * 4/5)
         layout.scrollDirection = .vertical
         layout.sectionInset = UIEdgeInsets(top: space, left: space, bottom: space, right: space)
         layout.minimumLineSpacing = space
@@ -71,10 +73,15 @@ class BeerCollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: BeerCollectionViewCell.identifier, for: indexPath) as! BeerCollectionViewCell
         
-        cell.collecdtionBeerNameLabel.text = beerList[indexPath.row].title
+        cell.collectionBeerTitle.text = beerList[indexPath.row].title
         cell.collectionBeerImageView.kf.setImage(with: beerList[indexPath.row].image)
         cell.collectionBeerDescriptionLabel.text = beerList[indexPath.row].description
         
+        cell.collectionBeerImageView.layer.borderWidth = 1
+        cell.collectionBeerImageView.layer.borderColor = UIColor.black.cgColor
+        
+        cell.layer.borderWidth = 1
+        cell.layer.borderColor = UIColor.black.cgColor
         cell.backgroundColor = .systemGray5
         
         return cell

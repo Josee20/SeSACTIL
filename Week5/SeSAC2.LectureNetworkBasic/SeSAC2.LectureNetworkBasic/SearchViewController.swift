@@ -41,7 +41,6 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
         // 연결고리작업 : 테이블 뷰가 해야할 역할 > 뷰 컨트롤러에게 요청
         
         searchTableView.delegate = self  // 클래스의 인스턴스 자체를 의미
@@ -53,7 +52,18 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         searchBar.delegate = self
         
-        requestBoxOffice(text: "20220801")
+        let format = DateFormatter()
+        format.dateFormat = "yyyyMMdd" // TMI -> "yyyyMMdd" "YYYYMMdd" (찾아보기)
+        
+        let yesterday = Calendar.current.date(byAdding: .day, value: -1, to: Date())
+        let dateResult = format.string(from: yesterday!)
+        
+        // 네트워크 통신 : 서버 점검 등에 의한 예외 처리
+        // 네트워크가 느린 환경 테스트
+        // 실기기 테스트 시 Condition 조절 가능( 권장 O )
+        // 시뮬레이터에서도 가능 (But 권장 X)
+        
+        requestBoxOffice(text: dateResult)
     }
     
     func configureView() {
@@ -90,9 +100,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
                 }
                 
                 print(self.list)
-                
-                
-                
+
 //                let movieNm1 = json["boxOfficeResult"]["dailyBoxOfficeList"][0]["movieNm"].stringValue
 //                let movieNm2 = json["boxOfficeResult"]["dailyBoxOfficeList"][1]["movieNm"].stringValue
 //                let movieNm3 = json["boxOfficeResult"]["dailyBoxOfficeList"][2]["movieNm"].stringValue

@@ -40,23 +40,16 @@ class ViewController: UIViewController, ViewPresentableProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        
-        
+
         UserDefaultHelper.shared.nickname = "고래밥"
         
         title = UserDefaultHelper.shared.nickname
         
         UserDefaultHelper.shared.age = 80
-        
-        
-        
     }
     
     func configureLabel() {
         view.backgroundColor = .red
     }
-
-
 }
 

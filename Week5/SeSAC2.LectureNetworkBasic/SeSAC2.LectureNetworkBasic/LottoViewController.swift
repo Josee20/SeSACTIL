@@ -19,9 +19,30 @@ class LottoViewController: UIViewController {
     var lottoPickerView = UIPickerView()
     // 코드로 뷰를 만드는 기능이 훨씬 더 많이 남아있음
     @IBOutlet var lottoNum: [UILabel]!
+      
+    var getLottoTime: Int {
+        get {
+            let format = DateFormatter()
+            format.dateFormat = "yyyy-MM-dd hh:mm:ss"
+            format.locale = Locale(identifier: "ko-KR")
+            
+            let startDate = format.date(from: "2002-12-07 00:00:00")!
+            let endDate = format.date(from: format.string(from: Date()))!
+            
+            let timeDifference = endDate.timeIntervalSince(startDate)
+            let days = Int(timeDifference / 86400)
+            
+            let lottoTimes = days / 7 + 1
+            return lottoTimes
+        }
+    }
     
-    let numberList: [Int] = Array(1...1025).reversed()
+    var numberList = [Int]()
     
+//    numberList.reversed()
+    
+    // var numberList: [Int] = Array(1...).reversed()
+    // Array(1...self.getLottoTime).reversed()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,16 +50,23 @@ class LottoViewController: UIViewController {
         // 문자로 인증번호 오면 바로 쓸 수 있는 것
         // numberTextField.textContentType = .oneTimeCode
         
+        for i in 1...getLottoTime {
+            numberList.append(i)
+        }
+        
+        numberList.reverse()
+        
         numberTextField.tintColor = .clear
         numberTextField.inputView = lottoPickerView // 텍스트필드를 클릭했을 때 피커뷰를 보여주고 싶다!
         
         lottoPickerView.delegate = self
         lottoPickerView.dataSource = self
         
-        //requestLotto(number: json["drwNo"].integerValue)
+        requestLotto(number: getLottoTime)
+        print(getLottoTime)
 
-   
     }
+    
     
     func requestLotto(number: Int) {
         
@@ -60,7 +88,6 @@ class LottoViewController: UIViewController {
                 
                 let date = json["drwNoDate"].stringValue
                 print(date)
-                print(Date())
                 
                 self.numberTextField.text = date
                 
