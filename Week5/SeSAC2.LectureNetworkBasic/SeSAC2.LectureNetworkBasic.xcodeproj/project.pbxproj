@@ -13,6 +13,7 @@
 		493B9AFC2898BD1E00DE7065 /* BoxOfficeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493B9AFB2898BD1E00DE7065 /* BoxOfficeModel.swift */; };
 		493B9AFE289956B700DE7065 /* BeerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493B9AFD289956B700DE7065 /* BeerCollectionViewCell.swift */; };
 		493B9B002899571D00DE7065 /* BeerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493B9AFF2899571D00DE7065 /* BeerCollectionViewController.swift */; };
+		49449E4C289B50700058ADDE /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 49449E4B289B50700058ADDE /* JGProgressHUD */; };
 		496627D52897527E0078725D /* ReusableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496627D42897527E0078725D /* ReusableViewProtocol.swift */; };
 		496627D8289757A50078725D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496627D7289757A50078725D /* Constant.swift */; };
 		496627DA28975FB40078725D /* UserDefaultHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496627D928975FB40078725D /* UserDefaultHelper.swift */; };
@@ -22,6 +23,7 @@
 		496627E52897DB970078725D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 496627E42897DB970078725D /* Kingfisher */; };
 		498616CD28996DAA00B9C6B3 /* BeerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498616CC28996DAA00B9C6B3 /* BeerInfo.swift */; };
 		49BEF7B9289A096800D8FC38 /* ImageSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BEF7B8289A096800D8FC38 /* ImageSearchViewController.swift */; };
+		49E0E59C289CB99600095BD6 /* ImageSearchAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E0E59B289CB99600095BD6 /* ImageSearchAPIManager.swift */; };
 		49E68F0C2890DD7700F1407F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E68F0B2890DD7700F1407F /* AppDelegate.swift */; };
 		49E68F0E2890DD7700F1407F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E68F0D2890DD7700F1407F /* SceneDelegate.swift */; };
 		49E68F102890DD7700F1407F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E68F0F2890DD7700F1407F /* ViewController.swift */; };
@@ -51,6 +53,7 @@
 		496627E12897CB980078725D /* RandomBeerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomBeerViewController.swift; sourceTree = "<group>"; };
 		498616CC28996DAA00B9C6B3 /* BeerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerInfo.swift; sourceTree = "<group>"; };
 		49BEF7B8289A096800D8FC38 /* ImageSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchViewController.swift; sourceTree = "<group>"; };
+		49E0E59B289CB99600095BD6 /* ImageSearchAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchAPIManager.swift; sourceTree = "<group>"; };
 		49E68F082890DD7700F1407F /* SeSAC2.LectureNetworkBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSAC2.LectureNetworkBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49E68F0B2890DD7700F1407F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49E68F0D2890DD7700F1407F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49449E4C289B50700058ADDE /* JGProgressHUD in Frameworks */,
 				496627E52897DB970078725D /* Kingfisher in Frameworks */,
 				496627E028977D000078725D /* SwiftyJSON in Frameworks */,
 				496627DD28977CEF0078725D /* Alamofire in Frameworks */,
@@ -99,6 +103,14 @@
 				496627D928975FB40078725D /* UserDefaultHelper.swift */,
 			);
 			path = Constant;
+			sourceTree = "<group>";
+		};
+		49E0E59A289CB97A00095BD6 /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				49E0E59B289CB99600095BD6 /* ImageSearchAPIManager.swift */,
+			);
+			path = APIManager;
 			sourceTree = "<group>";
 		};
 		49E68EFF2890DD7700F1407F = {
@@ -127,6 +139,7 @@
 				49E68F0D2890DD7700F1407F /* SceneDelegate.swift */,
 				49E68F0F2890DD7700F1407F /* ViewController.swift */,
 				49E68F112890DD7700F1407F /* Main.storyboard */,
+				49E0E59A289CB97A00095BD6 /* APIManager */,
 				49E809A9289A46BC00AF9700 /* Basic */,
 				491E783828935D990070E399 /* LocationViewController.swift */,
 				49ECA7C928923AA100B37918 /* WebViewController.swift */,
@@ -209,6 +222,7 @@
 				496627DC28977CEF0078725D /* Alamofire */,
 				496627DF28977D000078725D /* SwiftyJSON */,
 				496627E42897DB970078725D /* Kingfisher */,
+				49449E4B289B50700058ADDE /* JGProgressHUD */,
 			);
 			productName = SeSAC2.LectureNetworkBasic;
 			productReference = 49E68F082890DD7700F1407F /* SeSAC2.LectureNetworkBasic.app */;
@@ -242,6 +256,7 @@
 				496627DB28977CEF0078725D /* XCRemoteSwiftPackageReference "Alamofire" */,
 				496627DE28977D000078725D /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 				496627E32897DB970078725D /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				49449E4A289B50700058ADDE /* XCRemoteSwiftPackageReference "JGProgressHUD" */,
 			);
 			productRefGroup = 49E68F092890DD7700F1407F /* Products */;
 			projectDirPath = "";
@@ -289,6 +304,7 @@
 				493B9AFE289956B700DE7065 /* BeerCollectionViewCell.swift in Sources */,
 				49E68F232890E4D000F1407F /* ListTableViewCell.swift in Sources */,
 				496627DA28975FB40078725D /* UserDefaultHelper.swift in Sources */,
+				49E0E59C289CB99600095BD6 /* ImageSearchAPIManager.swift in Sources */,
 				496627D8289757A50078725D /* Constant.swift in Sources */,
 				49BEF7B9289A096800D8FC38 /* ImageSearchViewController.swift in Sources */,
 				49E809AE289A673000AF9700 /* ImageSearchCollectionViewCell.swift in Sources */,
@@ -512,6 +528,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		49449E4A289B50700058ADDE /* XCRemoteSwiftPackageReference "JGProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JonasGessner/JGProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		496627DB28977CEF0078725D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
@@ -539,6 +563,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		49449E4B289B50700058ADDE /* JGProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 49449E4A289B50700058ADDE /* XCRemoteSwiftPackageReference "JGProgressHUD" */;
+			productName = JGProgressHUD;
+		};
 		496627DC28977CEF0078725D /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 496627DB28977CEF0078725D /* XCRemoteSwiftPackageReference "Alamofire" */;

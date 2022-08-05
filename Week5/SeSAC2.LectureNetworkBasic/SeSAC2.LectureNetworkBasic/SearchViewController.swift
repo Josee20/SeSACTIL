@@ -10,6 +10,8 @@ import UIKit
 
 import Alamofire
 import SwiftyJSON
+import JGProgressHUD
+
 /*
  Swift Protocol
  - Delegatee
@@ -35,8 +37,11 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var searchTableView: UITableView!
     @IBOutlet weak var second: UITableView!
     
-    //BoxOffice 배열
+    // BoxOffice 배열
     var list: [BoxOfficeModel] = []
+    
+    // ProgfessView
+    let hud = JGProgressHUD()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,10 +83,11 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func requestBoxOffice(text: String) {
         
+        hud.show(in: view)
         self.list.removeAll() // 지우고 나서 서버통신 시작
         
         let url = "\(EndPoint.boxOfficeURL)key=\(APIKey.BOXOFFICE)&targetDt=\(text)"
-        AF.request(url, method: .get).validate().responseJSON { response in
+        AF.request(url, method: .get).validate().responseData { response in
             switch response.result {
             case .success(let value):
                 let json = JSON(value)
@@ -99,21 +105,16 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
                     self.list.append(data)
                 }
                 
-                print(self.list)
-
-//                let movieNm1 = json["boxOfficeResult"]["dailyBoxOfficeList"][0]["movieNm"].stringValue
-//                let movieNm2 = json["boxOfficeResult"]["dailyBoxOfficeList"][1]["movieNm"].stringValue
-//                let movieNm3 = json["boxOfficeResult"]["dailyBoxOfficeList"][2]["movieNm"].stringValue
-//
-//                //list 배열에 데이터 추가
-//                self.list.append(movieNm1)
-//                self.list.append(movieNm2)
-//                self.list.append(movieNm3)
+                
                 
                 self.searchTableView.reloadData()
+                self.hud.dismiss()
                 
             case .failure(let error):
                 print(error)
+                self.hud.dismiss()
+                
+                // 시뮬레이터 실패 테스트 > 맥
             }
         }
     }
@@ -135,6 +136,10 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return list.count
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
     }
 }
 
